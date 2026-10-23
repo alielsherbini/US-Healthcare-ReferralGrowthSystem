@@ -1,0 +1,6 @@
+{
+  "name": "SCOPES Health Referral Growth Ecosystem",
+  "description": "An internal operating system for SCOPES Health to generate, score, track, and convert law firm prospects into active referral partners.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

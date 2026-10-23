@@ -1,0 +1,38 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+}
+
+@layer utilities {
+  /* Premium Bento Grid card styling and hover effects */
+  .bento-card {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0; /* border-slate-200 */
+    border-radius: 1rem; /* rounded-2xl */
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.05), 0 1px 2px -1px rgba(0, 0, 0, 0.05); /* shadow-sm */
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .bento-card:hover {
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.04), 0 4px 6px -4px rgba(0, 0, 0, 0.04); /* hover:shadow-md */
+    border-color: #cbd5e1; /* hover:border-slate-300 */
+    transform: translateY(-2px);
+  }
+
+  .bento-card-dark {
+    background-color: #0f172a; /* bg-slate-900 */
+    border: 1px solid #1e293b; /* border-slate-800 */
+    border-radius: 1rem;
+    color: #ffffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .bento-card-dark:hover {
+    border-color: #334155;
+    transform: translateY(-2px);
+  }
+}
